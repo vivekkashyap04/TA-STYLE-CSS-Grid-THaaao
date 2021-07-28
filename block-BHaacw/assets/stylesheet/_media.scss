@@ -1,0 +1,56 @@
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    max-width: 1020px;
+  }
+  .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .item2 {
+    order: 6;
+  }
+  .item3 {
+    order: 2;
+  }
+  .item4 {
+    order: 3;
+  }
+  .item5 {
+    order: 4;
+  }
+  .item6 {
+    order: 4;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 960px;
+  }
+  .container-grid {
+    grid-template-columns: 1fr;
+  }
+  .item2 {
+    order: 2;
+    div {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  .item3 {
+    order: 3;
+  }
+  .item4 {
+    order: 1;
+  }
+  .item5 {
+    order: 4;
+  }
+  .item6 {
+    order: 5;
+  }
+}

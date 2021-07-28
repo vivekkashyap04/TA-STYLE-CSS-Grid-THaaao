@@ -1,0 +1,123 @@
+html {
+  font-size: 16px;
+}
+*,
+*::before,
+* {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  background-color: #3a4a4f;
+}
+h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 1.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+  color: #6e6556;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1800px;
+  padding: 0rem 3rem;
+  margin: 0 auto;
+}
+nav {
+  ul {
+    display: grid;
+    border: 2px solid white;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: #fff;
+    border-top-color: $primary;
+    justify-items: center;
+    padding: 1rem;
+    a {
+      font-size: 1.4rem;
+      color: rgb(113, 194, 217);
+      font-weight: 900;
+    }
+  }
+}
+.container-grid {
+  display: grid;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.item {
+  background-color: #fff;
+  padding: 0.5rem;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: $primary;
+  a {
+    color: $secondary;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}
+.item2 {
+  grid-row: span 3;
+  .cat {
+    width: 70%;
+    height: 300px;
+    display: grid;
+    align-content: center;
+    border-radius: 50%;
+    margin: 1rem auto;
+  }
+  p {
+    margin-bottom: 4rem;
+  }
+}
+.item3 {
+  padding: 0px;
+  a {
+    display: block;
+    background-color: $secondary;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin-top: 3rem;
+  }
+  h3,
+  p {
+    padding: 0 0.5rem;
+  }
+}
+.item5 {
+  padding: 0;
+  h3 {
+    background-color: $primary;
+    color: #fff;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+  a,
+  p {
+    padding: 0 1rem;
+  }
+}
+.item4 {
+  grid-row: span 2;
+  img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+}
+.item1 {
+  p {
+    margin-bottom: 3rem;
+  }
+}
